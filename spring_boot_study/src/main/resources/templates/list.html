@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:each="item : ${items}">
+        <div th:text="${item.id}"></div>
+        <div th:text="${item.title}"></div>
+        <div th:text="${item.price}"></div>
+    </div>
+</body>
+</html>
